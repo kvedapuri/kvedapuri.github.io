@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Feedback Page</title>
+      <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <h1>Feedback Form</h1>
+    <form id="form__submit" action="https://www.randyconnolly.com/tests/process.php" method="post">
+      <label>First Name: </label><br />
+        <input type="text" name="fname" placeholder="Your first name.." required/><br />
+        <label>Last Name: </label><br />
+        <input type="text" name="lname" placeholder="Your last name.." required/><br />
+        <label>AGE: </label><br />
+        <input type="number" name="age" placeholder="Your age.." required/><br />
+        <label>Message: </label><br />
+        <input type="text" name="message" placeholder="Feedback that you would like to share.." style="height:200px" required/><br /><br />
+        <a href="#" onclick="submitForm()">Submit Here</a>
+    </form>
+  
+    <script>
+        function submitForm() {
+            let form = document.getElementById("form__submit");
+            form.submit();
+        }
+    </script>
+   </body>
+</html>

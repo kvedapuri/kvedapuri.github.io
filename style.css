@@ -1,0 +1,167 @@
+body {
+  background-color: #e5f3f8;
+  background-image: url("images/bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  color: black;
+  font-family: 'times new roman', courier;
+  font-size: 150%;
+  border-style: ridge;
+  border-color: black;
+  background-color: #4e82b4;
+}
+h2 {
+  color: black;
+  font-family: 'times new roman', courier;
+  font-size: 150%;
+  border-style: ridge;
+  border-color: black;
+  background-color: rgb(78,130,180); /* RGB value for Cyan Azure color */
+} 
+h3 {
+  color: black;
+  font-family: 'times new roman', courier;
+  font-size: 150%;
+  border-style: ridge;
+  border-color: black;
+  background-color: #4e82b4;
+}
+
+p {
+  color: black;
+  font-family: courier;
+  font-size: 90%;
+  text-align: justify;
+  background-color: lightgrey;
+}
+
+/* Assign justify style to paragraph content and place it next to image. */
+div.a {
+  text-align: justify;
+  background-color: lightgrey;
+
+}
+
+.column {
+  float: left;
+  width: 47%;
+}
+/* CSS code for buttons used in all html pages. */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group .button {
+  background-color: #4e82b4; /* Hex code for Cyan Azure color */
+  border: black;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: darkblue;
+}
+
+#skillset {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin:25px 25px;
+  width:80%;
+}
+
+#skillset td, #skillset th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#skillset tr:nth-child(even){background-color: #6ca7de;}
+#skillset tr:nth-child(odd){background-color: #5d94c4;}
+#skillset tr:hover {background-color: rgb(181, 211, 239);}
+
+#skillset th {
+  padding-top: 12px;
+  font-family: 'times new roman', courier;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4e82b4;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
